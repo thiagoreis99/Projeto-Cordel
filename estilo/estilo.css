@@ -19,6 +19,7 @@
 body {
     min-height: 100vh;
     font-family: var(--fonte1);
+    background-color: darkgray;
 }
 
 header {
@@ -38,19 +39,19 @@ header > p {
     padding-bottom: 50px;
 }
 
-p > a {
+header p > a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-p > a:hover {
+header p > a:hover {
     text-decoration: underline;
 }
 
 section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
@@ -59,4 +60,37 @@ section {
 
 section > p {
     padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
+}
+
+section.imagem > p {
+    background-color: black;
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+footer p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p > a:hover {
+    text-decoration: underline;
 }
